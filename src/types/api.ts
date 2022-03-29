@@ -18,6 +18,30 @@ export type ModulesProps = {
   description: string
 }
 
+export type SocialLink = {
+  title: string
+  url: string
+}
+export type Author = {
+  photo: ImageProps
+  name: string
+  role: string
+  socialLinks: SocialLink[]
+  description: string
+}
+
+export type Review = {
+  name: string
+  text: string
+  photo: {
+    url: string
+  }
+}
+
+export type Question = {
+  question: string
+  answer: string
+}
 export type TechIconsProps = {
   title: string
   icon: {
@@ -70,6 +94,20 @@ export type PricingBoxProps = {
   button: ButtonsProps
 }
 
+export type SectionAboutUsProps = {
+  title: string
+  authors: Author[]
+}
+
+export type SectionReviewsProps = {
+  title: string
+  reviews: Review[]
+}
+export type SectionFaqProps = {
+  title: string
+  questions: Question[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -79,4 +117,7 @@ export type LandingPageProps = {
   sectionModules: SectionModulesProps
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
+  sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
+  sectionFaq: SectionFaqProps
 }
