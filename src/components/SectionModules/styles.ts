@@ -7,7 +7,6 @@ export const Content = styled.div`
     grid-template-columns: 1fr;
     grid-gap: ${theme.grid.gutter};
     margin-top: ${theme.spacings.medium};
-
     ${media.greaterThan('medium')`
       grid-template-columns: 1fr 1fr;
     `}
