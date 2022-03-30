@@ -1,7 +1,7 @@
 ## Sobre
 Aplicação desenvolvida com base no curso [ReactAvançado](https://reactavancado.com.br/).
 
-## Tecnologias
+## Tecnologias utilizadas
  - Next
  - GraphQL
  - Styled Components
